@@ -1,3 +1,3 @@
-module github.com/je4/oa-journals-references/v2
+module github.com/je4/oa-journals-references
 
 go 1.16
