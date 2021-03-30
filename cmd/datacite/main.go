@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/je4/oa-journals-references/pkg/oai"
+	"github.com/je4/oa-journals-references/v2/pkg/oai"
 )
 
 func main() {
