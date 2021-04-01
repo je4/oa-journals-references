@@ -94,7 +94,8 @@ type Set struct {
 }
 
 type ListSets struct {
-	Set []Set `xml:"set"`
+	Set             []Set  `xml:"set"`
+	ResumptionToken string `xml:"resumptionToken"`
 }
 
 type Identify struct {

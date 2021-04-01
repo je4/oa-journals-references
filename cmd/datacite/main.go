@@ -6,9 +6,22 @@ import (
 )
 
 func main() {
+	/*
+		(&oai.Request{
+			BaseURL: "https://oai.datacite.org/oai",
+		}).HarvestSets(func(set *oai.Set) {
+			fmt.Printf("[%s] %s: %s\n", set.SetSpec, set.SetName, set.SetDescription.GoString())
+		})
+	*/
+
+	counter := 0
 	(&oai.Request{
-		BaseURL: "https://oai.datacite.org/oai",
-	}).HarvestSets(func(record *oai.Record) {
-		fmt.Printf("%s\n\n", record.Metadata.Body[0:500])
+		BaseURL:        "https://oai.datacite.org/oai",
+		Set:            "ETHZ.FHNW",
+		MetadataPrefix: "oai_dc",
+	}).HarvestRecords(func(record *oai.Record) {
+		counter++
+		fmt.Printf("%6d [%s] %s\n", counter, record.Header.Identifier, record.Metadata.GoString())
 	})
+
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE oai_dc:dc [
+        <!ELEMENT oai_dc:dc (dc:title|dc:identifier|dc:date|dc:relation|dc:description|dc:creator|dc:publisher|dc:type|dc:subject|dc:language|dc:source)*>
+        <!ATTLIST oai_dc:dc
+                xsi:schemaLocation CDATA #REQUIRED>
+        <!ELEMENT dc:title (#PCDATA)>
+        <!ELEMENT dc:identifier (#PCDATA)>
+        <!ELEMENT dc:date (#PCDATA)>
+        <!ELEMENT dc:relation (#PCDATA)>
+        <!ELEMENT dc:description (#PCDATA)>
+        <!ELEMENT dc:creator (#PCDATA)>
+        <!ELEMENT dc:publisher (#PCDATA)>
+        <!ELEMENT dc:type (#PCDATA)>
+        <!ELEMENT dc:subject (#PCDATA)>
+        <!ATTLIST dc:subject
+                xsi:type CDATA #IMPLIED>
+        <!ELEMENT dc:language (#PCDATA)>
+        <!ELEMENT dc:source (#PCDATA)>
+        ]>
+<oai_dc:dc xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+    <dc:title>Waiting</dc:title>
+    <dc:identifier>2002-0953</dc:identifier>
+    <dc:identifier>https://doaj.org/article/8ce15d59aee343be904b00ad676089be</dc:identifier>
+    <dc:date>2020-04-01T00:00:00Z</dc:date>
+    <dc:relation>https://parsejournal.com/article/waiting/</dc:relation>
+    <dc:relation>https://doaj.org/toc/2002-0953</dc:relation>
+    <dc:description>Waiting is a particular kind of relation to the world. Keeping people waiting is practicing
+        domination and power. Temporal bordering constitutes an army of reserve labour, whose time is regarded as
+        surplus and wasted and therefore easily exploited. Similar to the case of colonial extraction of natural
+        resources, temporal bordering is nothing other than an act of stealing, stealing of time.&#13;
+        WAITING is an experimental film which started from a conversation between a filmmaker and an anthropologist.
+        WAITING explores the theme of waiting through the testimonies of three migrant men in Europe. The testimonies
+        about waiting appear in different forms; letter writing, painting and poetic research. The aim of the film is to
+        integrate academic knowledge into migrant stories and make them accessible to a broader audience by combination
+        of words and images.
+    </dc:description>
+    <dc:creator>Shahram Khosravi</dc:creator>
+    <dc:creator>Dagmawi Yimer</dc:creator>
+    <dc:publisher>University of Gothenburg</dc:publisher>
+    <dc:type>article</dc:type>
+    <dc:subject>migration</dc:subject>
+    <dc:subject>temporal bordering</dc:subject>
+    <dc:subject>experimental film</dc:subject>
+    <dc:subject>testimony</dc:subject>
+    <dc:subject>migrant stories</dc:subject>
+    <dc:subject xsi:type="dcterms:LCSH">Arts in general</dc:subject>
+    <dc:subject xsi:type="dcterms:LCSH">NX1-820</dc:subject>
+    <dc:language>EN</dc:language>
+    <dc:source>Parse Journal, Iss 10 Migration (2020)</dc:source>
+</oai_dc:dc>

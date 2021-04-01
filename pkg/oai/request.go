@@ -56,12 +56,12 @@ func (request *Request) GetFullURL() string {
 
 // HarvestIdentifiers arvest the identifiers of a complete OAI set
 // call the identifier callback function for each Header
-func (request *Request) HarvestSets(callback func(*Header)) {
-	request.Verb = "sets"
+func (request *Request) HarvestSets(callback func(*Set)) {
+	request.Verb = "ListSets"
 	request.Harvest(func(resp *Response) {
-		headers := resp.ListIdentifiers.Headers
-		for _, header := range headers {
-			callback(&header)
+		sets := resp.ListSets.Set
+		for _, set := range sets {
+			callback(&set)
 		}
 	})
 }
@@ -180,6 +180,11 @@ func (resp *Response) ResumptionToken() (hasResumptionToken bool, resumptionToke
 	// Then attempt to obtain a resumption token from a ListRecords response
 	if resumptionToken == "" {
 		resumptionToken = resp.ListRecords.ResumptionToken
+	}
+
+	// Then attempt to obtain a resumption token from a ListSets response
+	if resumptionToken == "" {
+		resumptionToken = resp.ListSets.ResumptionToken
 	}
 
 	// If a non-empty resumption token turned up it can safely inferred that...
